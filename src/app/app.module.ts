@@ -14,12 +14,14 @@ import { CalendarModule } from 'angular-calendar';
 import 'hammerjs';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
 import { DangerAlertComponent } from './danger-alert/danger-alert.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardLayoutComponent,
     DangerAlertComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,

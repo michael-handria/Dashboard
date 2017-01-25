@@ -63,15 +63,12 @@
   </md-toolbar>
 
   <md-card>
-    <mwl-calendar-month-view
-      [viewDate]="viewDate"
-      [events]="events"
-      style="size:20%">
-    </mwl-calendar-month-view>
+    <app-calendar></app-calendar>
   </md-card>
+
   <md-grid-list cols="4" rowHeight="100px">
     <md-grid-tile class="calendar" [colspan]="1" [rowspan]="5" >
-
+        <!-- using grid functionality  -->
     </md-grid-tile>
   </md-grid-list>
 

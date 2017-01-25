@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem }          from '../objects/menu-item';
 
+import { CalendarComponent } from '../calendar/calendar.component';
+
 @Component({
   selector: 'app-dashboard-layout',
   templateUrl: './dashboard-layout.component.html',
@@ -8,6 +10,8 @@ import { MenuItem }          from '../objects/menu-item';
 })
 export class DashboardLayoutComponent implements OnInit {
   user:string = "Sign-In";
+
+  //this will be a service or a class that we can inject or import
   items:MenuItem[] = [
                       {icon:"fa fa-home fa-lg", menu:"Home"},
                       {icon:"fa fa-list fa-lg", menu:"To-Do List"},
@@ -15,13 +19,9 @@ export class DashboardLayoutComponent implements OnInit {
                       {icon:"fa fa-rocket fa-lg", menu:"Widgets"}
                      ];
 
-   viewDate: Date = new Date();
-   events = [];
-
   constructor() { }
 
   ngOnInit() {
-
   }
 
 }
