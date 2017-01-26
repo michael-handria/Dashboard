@@ -23,10 +23,10 @@
     <div class="menuSide">
       <md-list>
         <md-list-item *ngFor="let item of items" class="menuBar">
-          <div class="menuContent">
-            <i md-list-avatar class="{{item.icon}}"></i>
-            <h2 md-line> {{item.menu}} </h2>
-          </div>
+            <div class="menuContent">
+              <i md-list-avatar class="{{item.icon}}"></i>
+              <h2 md-line> {{item.menu}} </h2>
+            </div>
         </md-list-item>
       </md-list>
 
@@ -61,14 +61,28 @@
         </div>
       </div>
   </md-toolbar>
-
-  <md-card>
-    <app-calendar></app-calendar>
-  </md-card>
+  <div>
+    <md-card style="width:50%;">
+      <app-calendar></app-calendar>
+    </md-card>
+    <md-card style="width:50%;">
+      <app-calendar></app-calendar>
+    </md-card>
+  </div>
 
   <md-grid-list cols="4" rowHeight="100px">
-    <md-grid-tile class="calendar" [colspan]="1" [rowspan]="5" >
-        <!-- using grid functionality  -->
+    <md-grid-tile [colspan]="2" [rowspan]="5">
+      <md-card>
+        <app-calendar></app-calendar>
+      </md-card>
+    </md-grid-tile>
+    <md-grid-tile class="calendar" [colspan]="1" [rowspan]="5"  style="display:flex">
+        <md-card>
+          hey
+        </md-card>
+        <md-card>
+          hey
+        </md-card>
     </md-grid-tile>
   </md-grid-list>
 
