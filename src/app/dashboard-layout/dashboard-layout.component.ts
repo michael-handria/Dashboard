@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem }          from '../objects/menu-item';
 
 import { CalendarComponent } from '../calendar/calendar.component';
+import { HealthbarComponent } from '../healthbar/healthbar.component';
 
 @Component({
   selector: 'app-dashboard-layout',

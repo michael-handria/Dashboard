@@ -15,6 +15,10 @@ import 'hammerjs';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
 import { DangerAlertComponent } from './danger-alert/danger-alert.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { HealthbarComponent } from './healthbar/healthbar.component';
+
+//services
+import { AssignmentService } from './service/assignment.service';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     DashboardLayoutComponent,
     DangerAlertComponent,
     CalendarComponent,
+    HealthbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     MaterialModule.forRoot(),
 
   ],
-  providers: [],
+  providers: [ AssignmentService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

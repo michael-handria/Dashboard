@@ -17,6 +17,9 @@ import { CalendarModule } from 'angular-calendar';
 import 'hammerjs';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
 import { DangerAlertComponent } from './danger-alert/danger-alert.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { HealthbarComponent } from './healthbar/healthbar.component';
+import { AssignmentService } from './service/assignment.service';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,6 +31,8 @@ AppModule = __decorate([
             AppComponent,
             DashboardLayoutComponent,
             DangerAlertComponent,
+            CalendarComponent,
+            HealthbarComponent,
         ],
         imports: [
             BrowserModule,
@@ -36,7 +41,7 @@ AppModule = __decorate([
             CalendarModule.forRoot(),
             MaterialModule.forRoot(),
         ],
-        providers: [],
+        providers: [AssignmentService],
         bootstrap: [AppComponent]
     }),
     __metadata("design:paramtypes", [])

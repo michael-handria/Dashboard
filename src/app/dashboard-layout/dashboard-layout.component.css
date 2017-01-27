@@ -69,3 +69,8 @@ i.fa.fa-user-circle{
 .searchTool {
   background-color: lightgray;
 }
+
+.healthbar-widget{
+  margin: 5px 5px;
+  width: 90%;
+}
